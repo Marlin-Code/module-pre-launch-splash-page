@@ -3,7 +3,7 @@
   --main-text-color: #17124E;
   --background-image: url(./assets/ocean.jpg);
 }
-.LandingPage {
+.PreLaunchSplashPage {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,38 +12,38 @@
   background-image: var(--background-image);
   background-size: cover;
 }
-.LandingPage-name {
+.PreLaunchSplashPage-name {
   font-size: calc(5/6*var(--header-height));
   margin: 0;
   padding: 10px;
   color: var(--main-text-color);
 }
-.LandingPage-header {
+.PreLaunchSplashPage-header {
   height: var(--header-height);
   display: flex;
   width: 100vw;
   flex-direction: row;
   align-items: start;
 }
-.LandingPage-content {
+.PreLaunchSplashPage-content {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 10vh 0;
 }
 
-.LandingPage-title {
+.PreLaunchSplashPage-title {
   line-height: 1.5em;
   color: var(--main-text-color);
 }
 
-.LandingPage-subscribed {
+.PreLaunchSplashPage-subscribed {
   font-size: 18px;
   margin-bottom: 20px;
   text-align: center;
   color: #17124E;
 }
-.LandingPage-form {
+.PreLaunchSplashPage-form {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -51,29 +51,29 @@
   height: 45px;
 }
 @media only screen and (max-width: 650px) {
-  .LandingPage-title {
+  .PreLaunchSplashPage-title {
     font-size: 36px; 
   }
-  .LandingPage-content {
+  .PreLaunchSplashPage-content {
     width: calc(100%-48px);
     padding: 0 24px;
   }
 }
 @media only screen and (min-width: 651px) {
-  .LandingPage-title {
+  .PreLaunchSplashPage-title {
     font-size: 48px; 
   }
-  .LandingPage-content {
+  .PreLaunchSplashPage-content {
     width: 600px;
   }
 }
-.LandingPage-form input[type="email"] {
+.PreLaunchSplashPage-form input[type="email"] {
   width: 100%;
   padding: 10px;
   font-size: 18px;
 }
 
-.LandingPage-form button[type="submit"] {
+.PreLaunchSplashPage-form button[type="submit"] {
   font-size: 18px;
   background-color: var(--main-text-color);
   color: white;
