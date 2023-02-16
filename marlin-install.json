@@ -2,7 +2,5 @@
   "raw_source_code": {
 		"src/template/": "src/"
 	},
-	"project_updates": {
-		"webpack.dev.js": "webpack.dev.js"
-	}
+	"project_updates": {}
 }
