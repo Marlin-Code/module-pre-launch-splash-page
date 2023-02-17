@@ -1,7 +1,7 @@
 :root {
   --header-height: 72px;
   --main-text-color: #17124E;
-  --background-image: url(./assets/ocean.jpg);
+  --background-image: url(../../assets/ocean.jpg);
 }
 .PreLaunchSplashPage {
   display: flex;

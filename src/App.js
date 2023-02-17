@@ -1,5 +1,5 @@
 import React from 'react';
-import LandingPage from './template/PreLaunchSplashPage'
+import LandingPage from './template/components/PreLaunchSplashPage/PreLaunchSplashPage'
 import './App.css';
 
 function App() {
