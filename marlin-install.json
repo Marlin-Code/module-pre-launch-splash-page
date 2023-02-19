@@ -1,7 +1,10 @@
 {
-  "raw_source_code": {
+	"raw_source_code": {
 		"src/template/": "src/"
 	},
 	"project_updates": {},
-	"package_manager": "npm"
+	"package_manager": "npm",
+	"developer_tasks": [
+		"Install an svg loader in your webpack files. Add this block to your module.rules array:\n{\n\ttest: /\\.svg$/i,\n\tuse: [\"file-loader\"],\n}"
+	]
 }
