@@ -1,0 +1,14 @@
+.benefits-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .benefits-card-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

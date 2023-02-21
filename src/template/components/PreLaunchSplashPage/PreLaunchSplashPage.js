@@ -1,46 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Hero from './Hero/Hero';
 import './PreLaunchSplashPage.css';
+import ValueProp from './ValueProp/ValueProp';
+import CTA from './CTA/CTA';
+import Benefits from './Benefits/Benefits';
+import background from '../../assets/ocean.jpg';
 
 function PreLaunchSplashPage() {
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setSubscribed(true);
-  };
-  const companyName = "Marlin"
-  const headlineText = "Lightning Fast MVPS\n Full Ownership of Code"
-  const formPlaceholderText = "Email me when it's ready"
-  const thankYouText = "Thank you for subscribing! We'll keep you updated on our launch."
+  const backgroundStyles = {
+    "backgroundImage": `url(${background})`,
+    "backgroundSize": "cover",
+  }
 
   return (
-    <div className='PreLaunchSplashPage'>
-      <div className='PreLaunchSplashPage-header'>
-        <p className='PreLaunchSplashPage-name'>{companyName}</p>
-      </div>
-      <div className='PreLaunchSplashPage-content'>
-        <h1 className='PreLaunchSplashPage-title'>{headlineText}</h1>
-        { subscribed ? (
-          <p className="PreLaunchSplashPage-subscribed">
-            {thankYouText}
-          </p>
-        ) : (
-          <form className="PreLaunchSplashPage-form" onSubmit={handleSubmit}>
-            <input
-              type="email"
-              placeholder={formPlaceholderText}
-              value={email}
-              onChange={handleChange}
-              required
-              />
-            <button type="submit">Subscribe</button>
-          </form>
-        )}
+    <div style={backgroundStyles} className='PreLaunchSplashPage'>
+      <ValueProp className='PreLaunchSplashPage-ValueProp'/>
+      <Hero className='PreLaunchSplashPage-Hero'/>
+      <div className='PreLaunchSplashPage-CTA-and-Benefits'>
+        <CTA className='PreLaunchSplashPage-CTA'/>
+        <Benefits className='PreLaunchSplashPage-Benefits'/>
       </div>
     </div>
   )
