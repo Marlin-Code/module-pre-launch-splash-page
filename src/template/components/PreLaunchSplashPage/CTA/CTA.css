@@ -1,0 +1,28 @@
+.CTA-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+  height: 45px;
+}
+.CTA-form input[type="email"] {
+  flex-grow: 2;
+  height: 100%;
+  padding: 1em;
+  font-size: 1em;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.CTA-form button[type="submit"] {
+  flex-grow: 1;  
+  font-size: 1em;
+  background-color: #17124E;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
+  height: 100%;
+}

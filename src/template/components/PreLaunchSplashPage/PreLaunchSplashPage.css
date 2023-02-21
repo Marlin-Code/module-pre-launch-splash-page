@@ -1,83 +1,33 @@
 :root {
   --header-height: 72px;
-  --main-text-color: #17124E;
-  --background-image: url(../../assets/ocean.jpg);
 }
 .PreLaunchSplashPage {
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 64px 48px;
+  width: calc(100vw - 96px);
+  height: calc(100vh - 96px);
+  padding: 48px;
+}
+@media (max-width: 768px) {
+  .PreLaunchSplashPage {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 48px 0px;
+    width: calc(100vw - 48px);
+    height: auto;
+    padding: 24px;
+  }
+}
+.PreLaunchSplashPage-ValueProp{
+  grid-column: 1 / 13;
+}
+.PreLaunchSplashPage-Hero{
+  grid-column: 1 / 7;
+}
+.PreLaunchSplashPage-CTA-and-Benefits{
+  grid-column: 7 / 13;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background-image: var(--background-image);
-  background-size: cover;
-}
-.PreLaunchSplashPage-name {
-  font-size: calc(5/6*var(--header-height));
-  margin: 0;
-  padding: 10px;
-  color: var(--main-text-color);
-}
-.PreLaunchSplashPage-header {
-  height: var(--header-height);
-  display: flex;
-  width: 100vw;
-  flex-direction: row;
-  align-items: start;
-}
-.PreLaunchSplashPage-content {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10vh 0;
-}
-
-.PreLaunchSplashPage-title {
-  line-height: 1.5em;
-  color: var(--main-text-color);
-}
-
-.PreLaunchSplashPage-subscribed {
-  font-size: 18px;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #17124E;
-}
-.PreLaunchSplashPage-form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 20px;
-  height: 45px;
-}
-@media only screen and (max-width: 650px) {
-  .PreLaunchSplashPage-title {
-    font-size: 36px; 
-  }
-  .PreLaunchSplashPage-content {
-    width: calc(100%-48px);
-    padding: 0 24px;
-  }
-}
-@media only screen and (min-width: 651px) {
-  .PreLaunchSplashPage-title {
-    font-size: 48px; 
-  }
-  .PreLaunchSplashPage-content {
-    width: 600px;
-  }
-}
-.PreLaunchSplashPage-form input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 18px;
-}
-
-.PreLaunchSplashPage-form button[type="submit"] {
-  font-size: 18px;
-  background-color: var(--main-text-color);
-  color: white;
-  border: none;
-  cursor: pointer;
-  height: 100%;
+  gap: 48px;
 }
